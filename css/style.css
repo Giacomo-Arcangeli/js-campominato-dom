@@ -1,0 +1,44 @@
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcyan;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px 30px;
+    background-color: lightgreen;
+}
+
+main{
+    height: calc(100vh - 80px);
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square-box{
+    height: 600px;
+    width: 600px;
+    background-color: lightseagreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    height: calc(100% / 10);
+    flex-basis: calc(100% / 10);
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square.clicked{
+    background-color: dodgerblue;
+}
